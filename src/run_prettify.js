@@ -229,7 +229,7 @@ var IN_GLOBAL_SCOPE = false;
   // over which we exercise no control.
   var LOADER_BASE_URL =
      //'https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader';
-     'E:/GitHub/code-prettify/src';
+     'https://yui-kitamura.eng.pro/private/code-prettify/loader';
 
   for (var i = 0, n = langs.length; i < n; ++i) (function (lang) {
     var script = doc.createElement("script");
