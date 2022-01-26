@@ -19,52 +19,58 @@
 
 
 /* SPAN elements with the classes below are added by prettyprint. */
-.pln { color: #000 }  /* plain text */
+pre.prettyprint span.pln { color: #000 }  /* plain text */
 
 @media screen {
-  .str { color: #080 }  /* string content */
-  .kwd { color: #008 }  /* a keyword */
-  .com { color: #800 }  /* a comment */
-  .typ { color: #606 }  /* a type name */
-  .lit { color: #066 }  /* a literal value */
+  pre.prettyprint span.str { color: #080 }  /* string content */
+  pre.prettyprint span.kwd { color: #008 }  /* a keyword */
+  pre.prettyprint span.com { color: #800 }  /* a comment */
+  pre.prettyprint span.typ { color: #606 }  /* a type name */
+  pre.prettyprint span.lit { color: #066 }  /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #660 }
-  .tag { color: #008 }  /* a markup tag name */
-  .atn { color: #606 }  /* a markup attribute name */
-  .atv { color: #080 }  /* a markup attribute value */
-  .dec, .var { color: #606 }  /* a declaration; a variable name */
-  .fun { color: red }  /* a function name */
+  pre.prettyprint span.pun,
+  pre.prettyprint span.opn,
+  pre.prettyprint span.clo { color: #660 }
+  pre.prettyprint span.tag { color: #008 }  /* a markup tag name */
+  pre.prettyprint span.atn { color: #606 }  /* a markup attribute name */
+  pre.prettyprint span.atv { color: #080 }  /* a markup attribute value */
+  pre.prettyprint span.dec,
+  pre.prettyprint span.var { color: #606 }  /* a declaration; a variable name */
+  pre.prettyprint span.fun { color: red }  /* a function name */
 }
 
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
-  .str { color: #060 }
-  .kwd { color: #006; font-weight: bold }
-  .com { color: #600; font-style: italic }
-  .typ { color: #404; font-weight: bold }
-  .lit { color: #044 }
-  .pun, .opn, .clo { color: #440 }
-  .tag { color: #006; font-weight: bold }
-  .atn { color: #404 }
-  .atv { color: #060 }
+  pre.prettyprint span.str { color: #060 }
+  pre.prettyprint span.kwd { color: #006; font-weight: bold }
+  pre.prettyprint span.com { color: #600; font-style: italic }
+  pre.prettyprint span.typ { color: #404; font-weight: bold }
+  pre.prettyprint span.lit { color: #044 }
+  pre.prettyprint span.pun,
+  pre.prettyprint span.opn,
+  pre.prettyprint span.clo { color: #440 }
+  pre.prettyprint span.tag { color: #006; font-weight: bold }
+  pre.prettyprint span.atn { color: #404 }
+  pre.prettyprint span.atv { color: #060 }
 }
 
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint { padding: 2px; border: 1px solid #888 }
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L5,
-li.L6,
-li.L7,
-li.L8 { list-style-type: none }
+pre.prettyprint ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+/* L4,L9 are forced to show line num */
+pre.prettyprint li.L0,
+pre.prettyprint li.L1,
+pre.prettyprint li.L2,
+pre.prettyprint li.L3,
+pre.prettyprint li.L5,
+pre.prettyprint li.L6,
+pre.prettyprint li.L7,
+pre.prettyprint li.L8 { list-style-type: none }
 /* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 { background: #eee }
+pre.prettyprint li.L1,
+pre.prettyprint li.L3,
+pre.prettyprint li.L5,
+pre.prettyprint li.L7,
+pre.prettyprint li.L9 { background: #eee }
