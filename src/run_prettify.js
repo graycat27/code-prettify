@@ -415,7 +415,7 @@ var IN_GLOBAL_SCOPE = false;
           "static_cast,template,typeid,typename,using,virtual,where"];
       var JAVA_KEYWORDS = [COMMON_KEYWORDS,
           "abstract,assert,boolean,byte,extends,finally,final,implements,import," +
-          "instanceof,interface,null,native,package,strictfp,super,synchronized," +
+          "instanceof,interface,null,native,package,record,strictfp,super,synchronized," +
           "throws,transient"];
       var CSHARP_KEYWORDS = [COMMON_KEYWORDS,
           "abstract,add,alias,as,ascending,async,await,base,bool,by,byte,checked,decimal,delegate,descending," +
